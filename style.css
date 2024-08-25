@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    /* border: 1px solid red; */
+}
+.main-container{
+    height: auto;
+    width: 100%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+   overflow: hidden;
+}
+.main-container video{
+  height: 100%;
+  width:100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+object-fit: cover;
+ }
+
+ .text-part{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 30px;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+ }
+ h1{
+text-decoration: underline;
+font-weight: bold;
+font-size: 2em;
+margin-top: 50px;
+text-align: center;
+ }
+ 
+ .text-part em{
+    font-weight: bolder;
+    font-style: normal;
+ }
+ .part-1{
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+ }
+ .part-1 h2{
+    text-align: center;
+    text-decoration: underline;
+ }
+ 
+ .boxes-part{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 50px;
+    justify-content: space-evenly;
+ }
+ .box{
+    height: 220px;
+    width: 300px;
+    margin-top: 50px;
+ }
+ 
+ .box h3{
+   margin-top: 10px;
+    text-align: center;
+ }
+ .box img{
+    height: 80%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+ }
+ .box img:hover{
+   height: 85%;
+   -webkit-box-shadow: 1px 1px 11px 4px rgba(242,242,242,1);
+   -moz-box-shadow: 1px 1px 11px 4px rgba(242,242,242,1);
+   box-shadow: 1px 1px 11px 4px rgba(242,242,242,1);
+ }
+ .last-line{
+    position: relative;
+    z-index: 2;
+    padding-block: 50px;
+ }
+ .last-line h2{
+   text-decoration: underline;
+ }
+ /* responsive css code */
+ @media (max-width:480px) {
+   h1{
+      font-size: 1.7em;
+   }
+   .text-part{
+      align-items: center;
+      text-align: center;
+     padding-right: 0px;
+  
+   }
+   .text-part p{
+      font-size: 0.8em;
+      margin-right: 0px;
+      padding-right: 0px;
+      padding-inline: 10px;
+      margin-top: 10px;
+   }
+ }
+
+
+ 
+
